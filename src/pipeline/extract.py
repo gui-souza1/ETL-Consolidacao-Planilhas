@@ -10,7 +10,7 @@ Função para ler arquivos da pasta data/input e retornar uma lista de dataframe
     args: 
         path_pasta_input (str): caminho para a pasta input com os arquivos
     return:
-        lista de dataframes 
+        (List) : lista de dataframes 
 '''
 def read_data_input(path: Path) -> List[pd.DataFrame]:
     all_files = list(path.glob("*.xlsx"))               # Buscar todos os arquivos excel na pasta do path
